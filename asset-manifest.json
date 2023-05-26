@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Website-Venomplay-ReactJS/static/css/main.8b1bc449.css",
+    "main.js": "/Website-Venomplay-ReactJS/static/js/main.db5a2eed.js",
+    "static/js/787.2c72d989.chunk.js": "/Website-Venomplay-ReactJS/static/js/787.2c72d989.chunk.js",
+    "static/media/Mulish-800.ttf": "/Website-Venomplay-ReactJS/static/media/Mulish-800.61c03ebfe9301ddd19cb.ttf",
+    "static/media/Mulish-400.ttf": "/Website-Venomplay-ReactJS/static/media/Mulish-400.06ce9c37c31ae94797a2.ttf",
+    "static/media/en.png": "/Website-Venomplay-ReactJS/static/media/en.841fc3c5dd8b20c06f42.png",
+    "index.html": "/Website-Venomplay-ReactJS/index.html",
+    "main.8b1bc449.css.map": "/Website-Venomplay-ReactJS/static/css/main.8b1bc449.css.map",
+    "main.db5a2eed.js.map": "/Website-Venomplay-ReactJS/static/js/main.db5a2eed.js.map",
+    "787.2c72d989.chunk.js.map": "/Website-Venomplay-ReactJS/static/js/787.2c72d989.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b1bc449.css",
+    "static/js/main.db5a2eed.js"
+  ]
+}
