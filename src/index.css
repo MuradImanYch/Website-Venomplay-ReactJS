@@ -1,13 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: Mulish-400;
+    font-display: swap;
+    src: url("./assets/fonts/Mulish-400.ttf");
+}
+@font-face {
+    font-family: Mulish-800;
+    font-display: swap;
+    src: url("./assets/fonts/Mulish-800.ttf");
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: #131314;
+}
+.container {
+    width: 95%;
+    margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 1024px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container {
+        width: 1600px;
+    }
 }
