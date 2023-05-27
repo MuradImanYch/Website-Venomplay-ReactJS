@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import './Header.css';
 import $ from 'jquery';
 
+import logo from '../../assets/ico/logo.png';
 import gh from '../../assets/ico/github.png';
 import twitter from '../../assets/ico/twitter.png';
 import dc from '../../assets/ico/dc.png';
 import tg from '../../assets/ico/tg.png';
 import en from '../../assets/ico/en.png';
-import ru from '../../assets/ico/ru.png';
+import { Link } from 'react-router-dom';
+// import ru from '../../assets/ico/ru.png';
 
 const Header = () => {
     const[barState, setBarstate] = useState(true);
+    const[connectMenuToggle, setConnectMenuToggle] = useState(true);
 
     const menuToggle = () => {
         if($(window).width() <= 1024) { // for mobile
@@ -34,14 +37,26 @@ const Header = () => {
         }
     }
 
+    const connectMenu = () => {
+        setConnectMenuToggle(!connectMenuToggle);
+        
+        if(connectMenuToggle) {
+            $('header .connectMnWrap').css({display: 'flex'});
+        }
+        else {
+            $('header .connectMnWrap').css({display: 'none'});
+        }
+    }
+
     return (
         <div>
             <header>
                 <div className="container">
                     <div className='logoSocNet'>
-                        <div className='gap'></div>
+                        <div className='connectMenu'></div>
                         <div>
-                            <a className="logo" href="/">Logo</a>
+                            <img className='logoImg' src={logo} alt="logo" />
+                            <Link className="logo" to="/">VenomPlay</Link>
                         </div>
                         <div className="toggle">
                             <div id="menuToggleMobDiv" onClick={menuToggle}>
@@ -64,7 +79,6 @@ const Header = () => {
                             <li><a href="#">Stake</a></li>
                             <li><a href="#">Swap</a></li>
                             <li><a href="#">Farm</a></li>
-                            <li><a href="#">White paper</a></li>
                             <li><a href="#">F.A.Q</a></li>
                         </ul>
                         <div className="socNet">
@@ -75,7 +89,17 @@ const Header = () => {
                         </div>
                         <div className="langSwitcher">
                             <a href="#"><img src={en} alt="en" /></a>
-                            <a href="#"><img src={ru} alt="ru" /></a>
+                        </div>
+                        <div className='user'>
+                            <p className='username'>erf12d23...</p>
+                            <div className='connectMenu' onClick={connectMenu}>
+                                <div className="dot"></div>
+                                <div className="dot"></div>
+                                <div className="dot"></div>
+                            </div>
+                            <div className="connectMnWrap">
+                                <button>Logout</button>
+                            </div>
                         </div>
                     </div>
                 </div>

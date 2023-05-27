@@ -1,33 +1,43 @@
 header {
     width: 100%;
     height: 80px;
-    background: linear-gradient(180deg, #121B2B 0%, rgba(18, 27, 43, 0) 100%);
+}
+header .logoImg {
+    margin: 0 20px 0 0;
+}
+.logoImg {
+    width: 50px;
 }
 header .container {
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: space-between;
+    width: 95%;
 }
 header .logoSocNet {
     display: flex;
     align-items: center;
 }
+header .logoSocNet div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
 header .logo {
     font-family: Mulish-800;
-    font-size: 48px;
+    font-size: 32px;
 }
 header .socNet {
     height: 30px;
     display: flex;
     align-items: center;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 80px;
     padding: 0 0 0 50px;
     border-left: 1px solid #303751;
 }
 header .socNet img {
     width: 30px;
-    margin: 4px 10px 0 10px;
+    margin: 4px 30px 0 30px;
 }
 header ul {
     display: flex;
@@ -42,7 +52,9 @@ header .listLangSwitcher {
     display: flex;
 }
 header .langSwitcher {
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
 }
 header .langSwitcher img {
     width: 25px;
@@ -52,22 +64,246 @@ header .langSwitcher img {
 header .listLangSwitcher .socNet {
     display: none;
 }
-header .logoSocNet .toggle, header .logoSocNet .gap {
+header .logoSocNet .toggle, header .logoSocNet .connectMenu {
     display: none;
+}
+header .connectMenu .dot {
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+}
+header .connectMenu .dot:nth-child(2) {
+    margin: 2px 0;
+}
+header .connectMenu {
+    margin: 0 0 4px 20px;
+    cursor: pointer;
+    background: gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px 2px silver;
+}
+header .user {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 30px;
+    position: relative;
+}
+header .connectMnWrap {
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    background: #191c27;
+    right: 0;
+    top: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+header .connectMnWrap button {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to left, #1b693a, #28975a);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#header {
+    margin: 100px 0 0 0;
+}
+#header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header .logoImg {
+    margin: 50px 0 20px 0;
+}
+#header h1 {
+    text-align: center;
+    font-family: Mulish-800;
+    font-size: 64px;
+}
+#header h1 span {
+    margin: 40px 0 50px 0;
+    display: block;
+    width: 447px;
+    font-family: Mulish-400;
+    font-weight: 100;
+    font-size: 22px;
+}
+#header .btnsWrap button {
+    background: #12a97e;
+    box-shadow: 0px 25px 24px -18px rgba(0, 0, 0, 0.3), inset 0px -4px 0px #12a97e, inset 0px -6px 6px #31ca9f;
+    border-radius: 14px;
+    width: 266px;
+    height: 67.51px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Mulish-800;
+}
+#header .btnsWrap {
+    position: relative;
+}
+#header .btnsWrap button:last-child {
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 20px 50px 0px #366658;
+    top: -5px;
+    transition: 0.3s;
+}
+#header .btnsWrap button:last-child:hover {
+    box-shadow: 0px 20px 70px 5px #366658;
+}
+
+#gameList {
+    margin: 150px 0 0 0;
+}
+#gameList .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+#gameList .card {
+    width: 290px;
+    height: 450px;
+    background: #191c27;
+    margin: 0 auto 70px auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #303751;
+}
+#gameList .card img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    -webkit-mask-image: linear-gradient(to top, transparent, white);
+    mask-image: linear-gradient(to top, transparent, white);
+}
+#gameList .card h2 {
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Mulish-800;
+    text-align: center;
+    width: 200px;
+}
+#gameList .card span {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #55707D;
+    font-family: Mulish-400;
+    display: block;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+#gameList .card button {
+    text-align: center;
+    width: 200px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    font-family: Mulish-800;
+    font-size: 18px;
+    background: linear-gradient(to left, #1b693a, #28975a);
+}
+
+footer {
+    width: 100%;
+    margin: 100px 0 0 0;
+    padding: 50px 0;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container > div {
+    margin: 40px 0;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container > div span {
+    width: 220px;
+    text-align: center;
+    color: #55707D;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: Mulish-400;
+}
+footer .container div > p {
+    margin: 20px 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Mulish-800;
+}
+#root > div > div > footer > div > div.socNet {
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .socNet div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .socNet div span {
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+footer .socNet img {
+    width: 30px;
 }
 
 @media (max-width: 1366px) {
     header ul li {
         margin: 0 20px;
     }
+    header .logo {
+        font-size: 23px;
+    }
+    .logoImg {
+        width: 45px;
+    }
+
+    #gameList .container {
+        padding: 0;
+    }
+    #gameList .card {
+        width: 250px;
+    }
+    header .socNet {
+        margin: 0 0 0 30px;
+        padding: 0 0 0 10px;
+    }
+    header .socNet img {
+        margin: 4px 15px 0 15px;
+    }
 }
 
 @media (max-width: 1280px) {
-    header .logo {
-        font-size: 30px;
+    header .container {
+        width: 1000px;
     }
-    header .socNet img {
-        width: 15px;
+    header .logo {
+        font-size: 20px;
     }
     header ul li a {
         font-size: 14px;
@@ -75,6 +311,19 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
     header .langSwitcher img {
         width: 20px;
         height: 15px;
+    }
+    .logoImg {
+        width: 40px;
+    }
+    header .socNet {
+        margin: 0 0 0 30px;
+        padding: 0 0 0 10px;
+    }
+    header ul li {
+        margin: 0 10px;
+    }
+    #gameList .card {
+        width: 270px;
     }
 }
 
@@ -85,14 +334,13 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
         width: 100%;
         left: 0;
         padding: 10px 15px 0 15px !important;
-        background: linear-gradient(180deg, #121B2B 0%, rgba(18, 27, 43, 0) 100%);
     }
     header ul {
         flex-direction: column;
     }
     header .listLangSwitcher {
         flex-direction: column;
-        background: linear-gradient(180deg, #121B2B 0%, rgba(18, 27, 43, 0) 100%);
+        background: #131314;
         position: absolute;
         width: 100%;
         left: 0;
@@ -102,6 +350,7 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
         transform: translate(0, -120%);
         transition: 0.6s;
         top: 65px;
+        z-index: 2;
     }
     header .listLangSwitcher .socNet {
         margin: 20px 0 40px 0;
@@ -119,6 +368,7 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
     }
     header .container {
         display: block;
+        width: auto;
     }
     header .logoSocNet .socNet {
         display: none;
@@ -127,8 +377,8 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
         justify-content: space-between;
         padding: 10px 0;
     }
-    header .logoSocNet .toggle, header .logoSocNet .gap {
-        display: block;
+    header .logoSocNet .toggle, header .logoSocNet .connectMenu {
+        display: flex;
     }
     header .langSwitcher img {
         width: 27px;
@@ -148,7 +398,30 @@ header .logoSocNet .toggle, header .logoSocNet .gap {
       margin: 7px 0;
       transition: 0.4s;
     }
-    header .gap {
-        width: 35px;
+    header .connectMenu {
+        display: none;
+    }
+    header .user { 
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    header .connectMnWrap {
+        position: static;
+        margin: 15px 0 0 0;
+        display: flex;
+    }
+    #root > div > div > header > div > div.logoSocNet > div.connectMenu {
+        background: transparent;
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+
+@media (max-width: 450px) {
+    #header h1 {
+        font-size: 35px;
+    }
+    #header h1 span {
+        width: 100%;
+        font-size: 20px;
     }
 }
