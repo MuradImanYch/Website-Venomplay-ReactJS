@@ -31,8 +31,8 @@ header .socNet {
     height: 30px;
     display: flex;
     align-items: center;
-    margin: 0 0 0 80px;
-    padding: 0 0 0 50px;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 10px;
     border-left: 1px solid #303751;
 }
 header .socNet img {
@@ -79,7 +79,7 @@ header .connectMenu .dot:nth-child(2) {
 header .connectMenu {
     margin: 0 0 4px 20px;
     cursor: pointer;
-    background: gray;
+    border: 1px solid silver;
     width: 30px;
     height: 30px;
     display: flex;
@@ -88,7 +88,6 @@ header .connectMenu {
     flex-direction: column;
     padding: 3px;
     border-radius: 6px;
-    box-shadow: 0px 0px 3px 2px silver;
 }
 header .user {
     display: flex;
@@ -112,10 +111,14 @@ header .connectMnWrap {
 header .connectMnWrap button {
     width: 100px;
     height: 30px;
-    background: linear-gradient(to left, #1b693a, #28975a);
+    background: linear-gradient(to left, #12a97e, #28975a);
     border: 0;
     border-radius: 6px;
     cursor: pointer;
+}
+header ul li {
+    display: flex;
+    align-items: center;
 }
 
 #header {
@@ -221,7 +224,7 @@ header .connectMnWrap button {
     border-radius: 8px;
     font-family: Mulish-800;
     font-size: 18px;
-    background: linear-gradient(to left, #1b693a, #28975a);
+    background: linear-gradient(to left, #12a97e, #28975a);
 }
 
 footer {
@@ -383,6 +386,7 @@ footer .socNet img {
     header .langSwitcher img {
         width: 27px;
         height: 20px;
+        margin-left: 0;
     }
     header .langSwitcher {
         margin: 0;
@@ -404,18 +408,26 @@ footer .socNet img {
     header .user { 
         margin-top: 25px;
         flex-direction: column;
+        margin-left: 0;
     }
     header .connectMnWrap {
         position: static;
         margin: 15px 0 0 0;
         display: flex;
+        background: transparent;
     }
     #root > div > div > header > div > div.logoSocNet > div.connectMenu {
         background: transparent;
         box-shadow: 0px 0px 0px 0px transparent;
+        border: 0;
     }
 }
 
+@media (max-width: 600px) {
+    header .logo {
+        display: none;
+    }
+}
 @media (max-width: 450px) {
     #header h1 {
         font-size: 35px;
@@ -423,5 +435,15 @@ footer .socNet img {
     #header h1 span {
         width: 100%;
         font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    header .listLangSwitcher {
+        margin: 0;
+        padding: 0 0 100px 0;
+    }
+    header .connectMnWrap {
+        margin: 0;
     }
 }

@@ -55,7 +55,7 @@ const Header = () => {
                     <div className='logoSocNet'>
                         <div className='connectMenu'></div>
                         <div>
-                            <img className='logoImg' src={logo} alt="logo" />
+                            <Link to="/"><img className='logoImg' src={logo} alt="logo" /></Link>
                             <Link className="logo" to="/">VenomPlay</Link>
                         </div>
                         <div className="toggle">
