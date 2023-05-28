@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Website-Venomplay-ReactJS/static/css/main.a00f7202.css",
-    "main.js": "/Website-Venomplay-ReactJS/static/js/main.315827cf.js",
+    "main.js": "/Website-Venomplay-ReactJS/static/js/main.c8cd214e.js",
     "static/js/787.2c72d989.chunk.js": "/Website-Venomplay-ReactJS/static/js/787.2c72d989.chunk.js",
     "static/media/game1.jpg": "/Website-Venomplay-ReactJS/static/media/game1.f3a542adf06197e1ac9f.jpg",
     "static/media/logo.png": "/Website-Venomplay-ReactJS/static/media/logo.e99b4f807f453fae0513.png",
@@ -11,11 +11,11 @@
     "static/media/en.png": "/Website-Venomplay-ReactJS/static/media/en.841fc3c5dd8b20c06f42.png",
     "index.html": "/Website-Venomplay-ReactJS/index.html",
     "main.a00f7202.css.map": "/Website-Venomplay-ReactJS/static/css/main.a00f7202.css.map",
-    "main.315827cf.js.map": "/Website-Venomplay-ReactJS/static/js/main.315827cf.js.map",
+    "main.c8cd214e.js.map": "/Website-Venomplay-ReactJS/static/js/main.c8cd214e.js.map",
     "787.2c72d989.chunk.js.map": "/Website-Venomplay-ReactJS/static/js/787.2c72d989.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a00f7202.css",
-    "static/js/main.315827cf.js"
+    "static/js/main.c8cd214e.js"
   ]
 }
